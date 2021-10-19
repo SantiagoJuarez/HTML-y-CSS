@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
+    <style>
+        *{
+            background-color: lightblue;
+        }
+        .fullView{
+            background-color: lightblue;
+            height: fit-content;
+            display: flex;
+            justify-content: space-around;
+            width: 321px;
+            border: solid 1px orange;
+            margin: auto;
+        }
+        .name-number{
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-right: 10px;
+        }
+        .name-number h3{
+            margin-top: -10px;
+        }
+        img.icon{
+            border-radius: 50px;
+            border: 2px solid orange;
+            margin-top: 20px;
+        }
+        .arrow{
+            color: black;
+            width: 10px;
+            margin: 30px;
+            margin-left: 1px;
+            text-align: center;
+            transition: 0.5s;
+        }
+        .char:hover{
+           transform: rotateX(180deg);
+        }
+        .arrow:hover #emailCard {
+            display: block;
+        }
+        .arrow #emailCard{
+            display: none;
+            background-color: lightblue;
+            height: fit-content;
+            position: absolute;
+            width: 290px;
+            padding: 15.5px;
+            border: solid 1px orange;
+            margin-top: 35px;
+            margin-left: -267px;
+            margin-bottom: 30px;
+        }
+        .email{
+            color: gray;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+    <!-- /Styles -->
+    <title>fullView2</title>
+</head>
+<body>
+     <div class="fullView">
+        <div class="image">
+            <img class="icon" src="./profilephoto.png" alt="profilephoto" height="70px" width="70px">
+        </div>
+        <div class="name-number">
+            <h1>Nombre</h3>
+            <h3>0000-0000</h4>
+        </div>
+        <div class="arrow">
+            <div class="char">
+            <p>▼</p>
+            </div>
+            <div id="emailCard">
+            <div class="email">
+            <h3>@gmail.com</h3>
+            </div>
+        </div>
+        </div>
+    </div>
+     <div class="fullView">
+        <div class="image">
+            <img class="icon" src="./profilephoto.png" alt="profilephoto" height="70px" width="70px">
+        </div>
+        <div class="name-number">
+            <h1>Nombre</h3>
+            <h3>0000-0000</h4>
+        </div>
+        <div class="arrow">
+            <div class="char">
+            <p>▼</p>
+            </div>
+            <div id="emailCard">
+            <div class="email">
+            <h3>@gmail.com</h3>
+            </div>
+        </div>
+        </div>
+    </div>        
+</body>
+</html>
